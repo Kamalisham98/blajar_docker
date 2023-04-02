@@ -7,8 +7,8 @@ RUN apt-get update -qq
 RUN gem update --system 3.2.3
 RUN gem install bundler:2.3
 
-# RUN bundle config --global path "$GEM_HOME"
-# RUN bundle config --global bin "$GEM_HOME/bin"
+RUN bundle config --global path "$GEM_HOME"
+RUN bundle config --global bin "$GEM_HOME/bin"
 
 
 RUN mkdir -p /usr/src/app
