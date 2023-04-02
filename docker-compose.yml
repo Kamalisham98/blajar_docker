@@ -1,0 +1,11 @@
+version: '3'
+services:
+  api:
+    image: rails
+    container_name: api
+    command:
+      "bash -c -l 'bundle install && rails server'"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
