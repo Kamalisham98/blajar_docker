@@ -4,7 +4,7 @@ services:
     image: rails
     container_name: api
     command:
-      "bash -c -l 'bundle install && rails server'"
+      "bash -c -l 'bundle install && bundle exec puma'"
     ports:
       - 3000:3000
     volumes:
