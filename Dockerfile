@@ -1,6 +1,6 @@
 FROM ruby:2.6.8
 
-RUN brew update -qq
+RUN apt-get update -qq
 RUN apt-get install nodejs
 
 # RUN apt-get install -y --no-install-recommends libjemalloc2
