@@ -1,7 +1,7 @@
 FROM ruby:2.6.8
 
 RUN apt-get update -qq
-RUN apt-get install nodejs
+RUN apt-get install  -y
 
 # RUN apt-get install -y --no-install-recommends libjemalloc2
 # ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
